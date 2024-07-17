@@ -1,4 +1,4 @@
 import datetime
 
-tdate = datetime.date(2020, 6, 16)
+tdate = datetime.datetime.now()
 print(tdate)
