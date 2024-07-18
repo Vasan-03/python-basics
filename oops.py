@@ -69,28 +69,32 @@
 
 # class info:
 #     def __init__(self):
-#         self.__name = "vasan"
-#         self._age = 21
+#         self.__a1 = "hi i am private variable"
+#         self._a2 = "hi i am protected variable"
 #
-#     def privatevariableaccess(self):
-#         print(self.__name)
+#     def __f1(self):
+#         print("hi i am private function")
 #
-#     @property
-#     def age(self):
-#         return self._age
+#     def _f2(self):
+#         print("hi i am protected function")
+#
+#     def privatemodifieraccess(self):
+#         print(self.__a1)
+#         self.__f1()
+#
+#     def protectedmodifieraccess(self):
+#         print(self._a2)
 #
 #
-# a1 = info()
-# #protected variable
-# # we can access protected variable outside the class ,its  the way to communicate to other developers that these
-# #are intended for internal use within the class or its subclass
-# print(a1._age)
+# class info1(info):
+#     def protectedmodifieracces1(self):
+#         self._f2()
 #
-# #public varaible
-# a1.privatevariableaccess()
 #
-# # but we cannot access private variable outside class like this
-# print(a1.__name)
+# a1 = info1()
+# a1.privatemodifieraccess()
+# a1.protectedmodifieraccess()
+# a1.protectedmodifieracces1()
 
 # abstraction
 
@@ -118,4 +122,4 @@
 # obj1 = shift()
 # obj1.engine()
 # obj1.brake()
-# # note:if we inherit abstract base class to child class ,we must implement all abstract methods of base class to child class.
+# # note:if we inherit abstract base class to sub class ,we must implement all abstract methods of base class to sub class.
