@@ -91,10 +91,10 @@
 #         self._f2()
 #
 #
-# a1 = info1()
-# a1.privatemodifieraccess()
-# a1.protectedmodifieraccess()
-# a1.protectedmodifieracces1()
+# obj = info1()
+# obj.privatemodifieraccess()
+# obj.protectedmodifieraccess()
+# obj.protectedmodifieracces1()
 
 # abstraction
 

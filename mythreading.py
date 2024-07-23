@@ -1,14 +1,17 @@
 import threading
+import time
 
 
 def square(num):
     for i in num:
-        print(i * i)
+        time.sleep(2)
+        print("square", i * i)
 
 
 def cube(num):
     for i in num:
-        print(i * i * i)
+        time.sleep(5)
+        print("cube", i * i * i)
 
 
 l1 = [1, 2, 3, 4, 5, 6]
